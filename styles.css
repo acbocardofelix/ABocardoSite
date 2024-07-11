@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffafa;
+    overflow-y: scroll; /* Always show vertical scrollbar */
+}
+
+header {
+    background-color: #ec66d5ab;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+    overflow-y: scroll; /* Always show vertical scrollbar */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+footer {
+    background-color: #33333300;
+    color: rgb(255, 18, 184);
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tab-button {
+    background-color: #ec66d5ab;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    overflow-y: scroll; /* Always show vertical scrollbar */
+
+}
+
+.tab-content.active {
+    display: block;
+}
+
+img {
+    width: 100%; /* Make the image responsive, spanning 100% of its container */
+    max-width: 300px; /* Limit the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 8px; /* Add rounded corners to the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
